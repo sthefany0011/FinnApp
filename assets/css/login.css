@@ -1,4 +1,3 @@
-
 body {
   background: #e9e9e9;
   color: #666666;
@@ -348,7 +347,6 @@ border: none;
   display: none;
 }
 
-
 @-webkit-keyframes buttonFadeInUp {
   0% {
     bottom: 30px;
@@ -361,4 +359,3 @@ border: none;
     opacity: 0;
   }
 }
-

@@ -1,9 +1,29 @@
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991.98px) {
-
 body{
     font-family:  Verdana, sans-serif; 
     margin: 0;
+}
+
+.nav{
+    background-color: #02a4dacc;
+    display: flex; 
+    align-items: baseline;
+    width: 350px;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    margin: auto;
+    align-items: center;
+    height: 65px;
+}
+
+.menu a{
+    display: flex;
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+    margin: 20px 35px 20px 35px;
 }
 
 .main{ 
@@ -125,5 +145,4 @@ body{
     margin-left: 20%;
     border-color: #02a3da;
 
-}
 }

@@ -4,61 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Novo Lançamento</title>
-    <link rel="stylesheet" href="assets/css/novo_lacamento.css">
+    <title>Menu</title>
+    <link rel="stylesheet" href="../ProjetoNeon/assets/css/launch_pages.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
 </head>
 <body>
     <header>
-<nav class=" nav menu">
-    <ul>
-        <a href="menu.html" ><i class="fas fa-home"></i></a>
-        <span><img src="assets/img/neon_logo.png" alt="" srcset=""></span>
-        <a  href="login.html"><i class="fas fa-sign-out-alt"></i></a>
-    </ul>
-</nav>
+        <nav class=" nav menu">
+            <ul>
+                <a href="menu.html" ><i class="fas fa-home"></i></a>
+                <span><img src="assets/img/neon_logo.png" alt="" srcset=""></span>
+                <a  href="login.html"><i class="fas fa-sign-out-alt"></i></a>
+            </ul>
+        </nav>
     </header>
-
-
-
-        <div class=principal> 	
+    <main>
+        <div class=principal>
             <div class="title">
-                <h1>MEUS LANCAMENTOS</h1>
+                <h1>MEUS LANÇAMENTOS</h1>
                 <a href=""></a>
             </div>
-            <div class="form">	                     
-                   <form action="" class="formulario" id="formulario" method="POST" name="formulario">
-                   <fieldset class="caixa">
-                     <legend>SALDO EM CONTA</legend>
+            <div class="form">
+                <form action="" class="formulario" id="formulario" method="POST" name="formulario">
+                    <fieldset class="caixa">
+                        <legend>Saldo</legend>
                         <input type="text">
-                       
                     </fieldset>
-                   <fieldset class="caixa">
-                     <legend class="col-form-label col-sm-2 pt-0">VALOR A APRESENTAR</legend>
-                    <div>
-                        <label for="">valor Lancamento</label>
-                        <input type="text" name="" id="" placeholder="">
-                     </div>
-                     <div>
-                            <label for="">data</label>
-                            <input type="datetime-local" name="" id="">
-                        </div>
-                        <div>
-                                <label for="">titulo lancamento</label>
-                                <input type="text" name="" id="">
+                    <fieldset class="caixa">
+                        <legend class="col-form-label col-sm-2 pt-0">Lançamentos por Período</legend>
+                            <div>
+                                <label for="">De</label>
+                                <input type="date" name="" id="">
                             </div>
-                           
-  </fieldset>
-  <div class="btn">
-  <a class="btn-danger"href="" ><i class="fas fa-question-circle"></i></a>
-<a class="btn-info" href="lancamentos.html" ><i class="fas fa-arrow-circle-right"></i></a></div>
-              <div class="footer">
-                        <img src="assets/img/neon-lg.png" alt="">
-                    </div>  
+                            <div>
+                                <label for="">Até</label>
+                                <input type="date" name="" id="">
+                            </div>
+                    </fieldset>
+                    <fieldset class="caixa">
+                        <legend class="col-form-label col-sm-2 pt-0">Lançamentos por título</legend>
+                            <div>
+                                <input type="text" name="" id="" placeholder="Ex: Netflix">
+                            </div>
+                    </fieldset>
+                    <div class="btn">
+                        <a class="btn-danger"href="" ><i class="fas fa-question-circle"></i></a>
+                        <a class="btn-info" href="lancamentos.html" ><i class="fas fa-arrow-circle-right"></i></a></div>
+                        <div class="footer">
+                            <img src="assets/img/neon-lg.png" alt="">
+                        </div>
                 </form>
-                    </div>
-                    </div>
-                    
-
+            </div>
+        </div>
+    </main>
 </body>
 </html>

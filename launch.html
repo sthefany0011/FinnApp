@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Lançamento</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="../ProjetoNeon/assets/css/nav.css">
+    <link rel="stylesheet" href="../ProjetoNeon/assets/css/launch_pag_mobile.css">
+    <link rel="stylesheet" href="../ProjetoNeon/assets/css/launch_pag_tablets.css">
+    <link rel="stylesheet" href="../ProjetoNeon/assets/css/launch_pag_desktop.css">
+    <link rel="stylesheet" href="assets/css/launch_pag_large_desktops.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+</head>
+<body>
+    <header>
+        <nav class="nav menu">
+            <ul>
+                <a href="menu.html" ><i class="fas fa-home"></i></a>
+                <span><img src="assets/img/neon_logo.png" alt="" srcset=""></span>
+                <a  href="login.html"><i class="fas fa-sign-out-alt"></i></a>
+            </ul>
+        </nav>
+    </header>
+    <main>          
+      <div class= main>
+          <div class="title">
+              <h1>NOVOS LANÇAMENTOS</h1>
+          </div>
+          <div>
+            <form action="" class="form" id="form" method="POST" name="form">
+                <fieldset class="box balence">
+                    <legend>Saldo</legend>
+                    <input type="text">
+                </fieldset>
+                <div id="block">
+                    <fieldset class="box value">
+                        <legend class="col-form-label col-sm-2 pt-0">Valor</legend>
+                        <label for="R$">R$</label>
+                        <input type="text" name="R$" placeholder="0,00">
+                    </fieldset>
+                    <fieldset class="box date">
+                        <legend class="col-form-label col-sm-2 pt-0">Data</legend>
+                        <input type="date">
+                    </fieldset>
+                </div>
+                    <fieldset class="box">
+                        <legend>Título de Lançamentos</legend>
+                        <input type="text" placeholder="Nome da transação">
+                    </fieldset>
+                    <fieldset class="box checkbox">
+                        <legend class="col-form-label col-sm-2 pt-0">Tipo de Lançamento</legend>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                <label class="form-check-label" for="gridRadios1">Entrada</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                <label class="form-check-label" for="gridRadios2">Saida</label>
+                            </div>
+                        </div>
+                </fieldset>
+                <div class="btn">
+                    <a class="btn-danger"href="" ><i class="fas fa-question-circle"></i></a>
+                    <a type="submit" href="./menu.html" class="btn-info"><i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+             </form> 
+          </div>
+      </div>
+    </main>
+</body>
+</html>

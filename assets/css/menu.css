@@ -1,16 +1,17 @@
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) { 
+    
     body{
-        font-family:  "RobotoDraft", "Roboto", sans-serif; 
+        font-family: system-ui,sans-serif,monospace;
         margin: 0;
     }
-    
+
     .nav{
         background-color: #02a4dacc;
         display: flex; 
         align-items: baseline;
     }
-    
+
     .menu ul{
         display: flex;
         list-style: none;
@@ -18,7 +19,7 @@
         align-items: center;
         height: 65px;
     }
-    
+
     .menu a{
         display: flex;
         font-size: 30px;
@@ -27,19 +28,18 @@
         margin: 20px 35px 20px 35px;
     }
     
-    .main{
+    .main{ 
         width: 200px;
-        height: 410px;
+        height: 320px;
         margin: auto;
-        margin-top: 30px;
+        margin-top: 40px;
         border-radius: 40px;
-        background-color: 
-            rgb(239, 244, 247);
-            box-shadow: inset 0 0 0 2px rgb(255 255 255), 0.3em 0.3em 1em rgb(0 0 0 / 15%);
+        background-color: rgb(239, 244, 247);
+        box-shadow: inset 0 0 0 2px rgb(255 255 255), 0.3em 0.3em 1em rgb(0 0 0 / 15%);
         padding: 20px;
-     }
+    }
     
-    .title h1{
+     .title h1{
         font-size: 13px;
         font-family: system-ui,sans-serif,monospace;
         text-align: center;
@@ -52,6 +52,10 @@
         font-weight: bold;
         color: #0c7ca1cc;
         background-color: #ffc703a6;   
+    }
+    
+    #block .box {
+        height: 89px;
     }
     
     .box {
@@ -82,42 +86,30 @@
         width: 81%;
         height: 9px;
     }
+
+    .box div{
+       display: flex;
+       align-items: baseline;
+    }
     
+   .box label{
+       margin-left: 10px;
+    }
+
+    .box div label{
+       font-size: 12px;
+    }
+
+    .box div input{
+       width: 81%; 
+    }
+
     .balance input{
         font-size: 20px;
         font-weight: bold;
     }
+   
     
-
-    .box.value {
-        display: flex;
-        align-items: baseline;
-    }
-    
-    .value label{
-         margin-left: 10px;
-         font-size: 13px;
-        }
-    
-    .value input{
-        margin-right: 11px;
-    }
-    
-    .checkbox{
-        margin-top: 10px;
-        font-size: 13px;
-        padding: 5px 0 7px 0;
-    }
-
-    .checkbox input{
-        width: 4%; 
-    }
-
-    .form-check{
-        display: flex;
-        align-items: baseline;
-    }
-
     .btn{
         display: flex;
         justify-content: space-around;
@@ -141,14 +133,12 @@
         border-color: #02a3da;
     
     }
-    
-}
+} 
 
 /* Small devices (landscape phones, 576px and up)*/
-
 @media (min-width: 576px) and (max-width: 767.98px) { 
     body{
-        font-family:  "RobotoDraft", "Roboto", sans-serif;; 
+        font-family:  system-ui,sans-serif,monospace;
         margin: 0;
     }
 
@@ -176,15 +166,12 @@
     
     .main{ 
         width: 350px;
-        height: 450px;
-        margin:auto;
+        height: 390px;
+        margin: auto;
         margin-top: 40px;
         border-radius: 40px;
         background-color: rgb(239, 244, 247);
-        box-shadow:
-            inset 
-                    0 0  0 2px rgb(255,255,255),
-                    0.3em 0.3em 1em rgba(0, 0, 0, 0.151);
+        box-shadow: inset 0 0 0 2px rgb(255 255 255), 0.3em 0.3em 1em rgb(0 0 0 / 15%);
         padding: 20px;
     }
     
@@ -219,7 +206,7 @@
     
     .box input{
         font-family: 'Courier New', Courier, monospace;
-        font-size: 14px;
+        font-size: 13px;
         outline: none;
         border: none;
         background-color: #02a4da3b;
@@ -229,55 +216,32 @@
         width: 88%;
         height: 13px;
     }
-    
+      
+    .box div{
+       display: flex;
+       align-items: baseline;
+   }
+
+    .box label{
+       margin-left: 10px;
+    }
+
+   .box div label{
+    font-size: 12px;
+    }
+
+    .box div input{
+        width: 81%; 
+    }
+
     .balance input{
         font-size: 20px;
         font-weight: bold;
     }
-    
-    #block{
-        display: flex;
-        justify-content: flex-start;
-    }
-    #block .value{
-        display: flex;
-        align-items: baseline;
-        margin-right: 8px;
-    }
-    
-    .value label{
-        margin-left: 10px;
-    }
-    
-    .value input{
-        margin-right: 13px;
-    }
-    
-    .date input{
-        height: 25px;
-        margin: 3px 12px 1px 12px;
-        padding: 3px;
-        width: auto;  
-    }
-    
-    .checkbox{
-        margin-top: 20px;
-        padding: 5px 0 7px 0;
-    }
-    
-    .checkbox input{
-        width: 4%; 
-    }
-    
-    .form-check{
-        display: flex;
-        align-items: baseline;
-    }
-
     .btn{
         display: flex;
         justify-content: space-around;
-        padding: 10px;
+        padding: 20px;
     }
     
     .btn-danger{
@@ -297,13 +261,13 @@
         border-color: #02a3da;
     
     }
-}
+ }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
 
     body{
-        font-family: "RobotoDraft", "Roboto", sans-serif;
+        font-family: system-ui,sans-serif,monospace;
         margin: 0;
     }
 
@@ -331,16 +295,13 @@
     
     .main{ 
         width: 350px;
-        height: 450px;
-        margin:auto;
+        height: 390px;
+        margin: auto;
         margin-top: 40px;
         border-radius: 40px;
         background-color: rgb(239, 244, 247);
-        box-shadow:
-            inset 
-                    0 0  0 2px rgb(255,255,255),
-                    0.3em 0.3em 1em rgba(0, 0, 0, 0.151);
-        padding: 20px; 
+        box-shadow: inset 0 0 0 2px rgb(255 255 255), 0.3em 0.3em 1em rgb(0 0 0 / 15%);
+        padding: 20px;
     }
     
     .title h1{
@@ -374,7 +335,7 @@
     
     .box input{
         font-family: 'Courier New', Courier, monospace;
-        font-size: 14px;
+        font-size: 13px;
         outline: none;
         border: none;
         background-color: #02a4da3b;
@@ -384,55 +345,29 @@
         width: 88%;
         height: 13px;
     }
-    
+     
+    .box div{
+       display: flex;
+    align-items: baseline;
+    width: 90%;
+   }
+
+   .box label{
+       margin-left: 10px;
+    }
+
+    .box div label{
+        font-size: 12px;
+    }
+
     .balance input{
         font-size: 20px;
         font-weight: bold;
     }
-    
-    #block{
-        display: flex;
-        justify-content: flex-start;
-    }
-    #block .value{
-        display: flex;
-        align-items: baseline;
-        margin-right: 8px;
-    }
-    
-    .value label{
-        margin-left: 10px;
-    }
-    
-    .value input{
-        margin-right: 13px;
-    }
-    
-    .date input{
-        height: 25px;
-        margin: 3px 12px 1px 12px;
-        padding: 3px;
-        width: auto;  
-    }
-    
-    .checkbox{
-        margin-top: 20px;
-        padding: 5px 0 7px 0;
-    }
-    
-    .checkbox input{
-        width: 4%; 
-    }
-    
-    .form-check{
-        display: flex;
-        align-items: baseline;
-    }
-
     .btn{
         display: flex;
         justify-content: space-around;
-        padding: 10px;
+        padding: 20px;
     }
     
     .btn-danger{
@@ -452,13 +387,13 @@
         border-color: #02a3da;
     
     }
-}
+ }
 
 /* Large devices (desktops, 992px and up)*/
 
 @media (min-width: 992px) and (max-width: 1199.98px){
     body{
-        font-family:  "RobotoDraft", "Roboto", sans-serif;
+        font-family: system-ui,sans-serif,monospace;
         margin: 0;
     }
 
@@ -486,15 +421,12 @@
     
     .main{ 
         width: 350px;
-        height: 450px;
-        margin:auto;
+        height: 390px;
+        margin: auto;
         margin-top: 40px;
         border-radius: 40px;
         background-color: rgb(239, 244, 247);
-        box-shadow:
-            inset 
-                    0 0  0 2px rgb(255,255,255),
-                    0.3em 0.3em 1em rgba(0, 0, 0, 0.151);
+        box-shadow: inset 0 0 0 2px rgb(255 255 255), 0.3em 0.3em 1em rgb(0 0 0 / 15%);
         padding: 20px;
     }
     
@@ -544,50 +476,24 @@
         font-size: 20px;
         font-weight: bold;
     }
-    
-    #block{
-        display: flex;
-        justify-content: flex-start;
-    }
-    #block .value{
-        display: flex;
-        align-items: baseline;
-        margin-right: 8px;
-    }
-    
-    .value label{
-        margin-left: 10px;
-    }
-    
-    .value input{
-        margin-right: 13px;
-    }
-    
-    .date input{
-        height: 25px;
-        margin: 3px 12px 1px 12px;
-        padding: 3px;
-        width: auto;  
-    }
-    
-    .checkbox{
-        margin-top: 20px;
-        padding: 5px 0 7px 0;
-    }
-    
-    .checkbox input{
-        width: 4%; 
-    }
-    
-    .form-check{
-        display: flex;
-        align-items: baseline;
+       
+    .box div{
+       display: flex;
+       align-items: baseline;
+   }
+
+   .box label{
+       margin-left: 10px;
     }
 
+    .box input{
+       margin-right: 14px;
+    }
+    
     .btn{
         display: flex;
         justify-content: space-around;
-        padding: 10px;
+        padding: 20px;
     }
     
     .btn-danger{
@@ -607,12 +513,12 @@
         border-color: #02a3da;
     
     }
-}
+ }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
     body{
-        font-family:  "RobotoDraft", "Roboto", sans-serif;
+        font-family:  system-ui,sans-serif,monospace;
         margin: 0;
     }
 
@@ -640,17 +546,13 @@
     
     .main{ 
         width: 350px;
-        height: 450px;
-        margin:auto;
+        height: 390px;
+        margin: auto;
         margin-top: 40px;
         border-radius: 40px;
         background-color: rgb(239, 244, 247);
-        box-shadow:
-            inset 
-                    0 0  0 2px rgb(255,255,255),
-                    0.3em 0.3em 1em rgba(0, 0, 0, 0.151);
-    
-        padding: 20px; 
+        box-shadow: inset 0 0 0 2px rgb(255 255 255), 0.3em 0.3em 1em rgb(0 0 0 / 15%);
+        padding: 20px;
     }
     
     .title h1{
@@ -699,46 +601,20 @@
         font-size: 20px;
         font-weight: bold;
     }
-    
-    #block{
-        display: flex;
-        justify-content: flex-start;
-    }
-    #block .value{
-        display: flex;
-        align-items: baseline;
-        margin-right: 8px;
-    }
-    
-    .value label{
-        margin-left: 10px;
-    }
-    
-    .value input{
-        margin-right: 13px;
-    }
-    
-    .date input{
-        height: 25px;
-        margin: 3px 12px 1px 12px;
-        padding: 3px;
-        width: auto;  
-    }
-    
-    .checkbox{
-        margin-top: 20px;
-        padding: 5px 0 7px 0;
-    }
-    
-    .checkbox input{
-        width: 4%; 
-    }
-    
-    .form-check{
-        display: flex;
-        align-items: baseline;
+       
+    .box div{
+       display: flex;
+       align-items: baseline;
+   }
+
+   .box label{
+       margin-left: 10px;
     }
 
+    .box input{
+       margin-right: 14px;
+    }
+    
     .btn{
         display: flex;
         justify-content: space-around;

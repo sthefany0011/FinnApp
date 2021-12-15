@@ -1,5 +1,5 @@
-/* Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) { 
+/* ----- -----  Mediaqueries ----- ----- */
+@media (max-width: 767.98px) { 
     
     body{
         font-family: system-ui,sans-serif,monospace;
@@ -109,289 +109,26 @@
         font-weight: bold;
     }
    
-    
     .btn{
         display: flex;
         justify-content: space-around;
+        padding: 5px;
+    }
+    
+    .btn a{
         padding: 10px;
-    }
-    
-    .btn-danger{
-        color: #df0024;
-        font-size: 20px;
-    }
-    
-    .btn-info {
-        color:#02d9db;
-        font-size: 20px;
-    }
-    
-    .btn-info:hover {
-        color: #02a3da;
-        font-size: 35px;
-        margin-left: 20%;
-        border-color: #02a3da;
-    
+        text-decoration: none;
+        background-color: rgb(239, 244, 247);
+        border: 1px solid rgba(0, 0, 0, 0.616);
+        border-radius: 6px;
+        color: #0c7ca1cc;
+        font-weight: bold;
+        font-size: 12px;
     }
 } 
 
-/* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width: 767.98px) { 
-    body{
-        font-family:  system-ui,sans-serif,monospace;
-        margin: 0;
-    }
+@media (min-width: 768px){
 
-    .nav{
-        background-color: #02a4dacc;
-        display: flex; 
-        align-items: baseline;
-    }
-
-    .menu ul{
-        display: flex;
-        list-style: none;
-        margin: auto;
-        align-items: center;
-        height: 65px;
-    }
-
-    .menu a{
-        display: flex;
-        font-size: 30px;
-        text-decoration: none;
-        color: #fff;
-        margin: 20px 35px 20px 35px;
-    }
-    
-    .main{ 
-        width: 350px;
-        height: 390px;
-        margin: auto;
-        margin-top: 40px;
-        border-radius: 40px;
-        background-color: rgb(239, 244, 247);
-        box-shadow: inset 0 0 0 2px rgb(255 255 255), 0.3em 0.3em 1em rgb(0 0 0 / 15%);
-        padding: 20px;
-    }
-    
-    .title h1{
-        font-size: 20px;
-        font-family: system-ui,sans-serif,monospace;
-        text-align: center;
-        margin: auto;
-        margin-top: 5px;
-        margin-bottom: 20px;
-        padding: 10px;
-        width: 90%; 
-        border-radius: 10px;
-        font-weight: bold;
-        color: #0c7ca1cc;
-        background-color: #ffc703a6;   
-    }
-    
-    .box {
-        font-family: 'Courier New', Courier, monospace;
-        margin: 10px 0;
-        border-radius: 5px;
-        border: 1px solid #39c;
-        width: 100%; 
-    }
-    
-    .box legend{
-        color: #02a3da;
-        margin-left: 10px;
-        padding: 0 1px;
-    }
-    
-    .box input{
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 13px;
-        outline: none;
-        border: none;
-        background-color: #02a4da3b;
-        border-radius: 5px 5px ;
-        padding: 8px; 
-        margin: 4px 10px 10px 12px; 
-        width: 88%;
-        height: 13px;
-    }
-      
-    .box div{
-       display: flex;
-       align-items: baseline;
-   }
-
-    .box label{
-       margin-left: 10px;
-    }
-
-   .box div label{
-    font-size: 12px;
-    }
-
-    .box div input{
-        width: 81%; 
-    }
-
-    .balance input{
-        font-size: 20px;
-        font-weight: bold;
-    }
-    .btn{
-        display: flex;
-        justify-content: space-around;
-        padding: 20px;
-    }
-    
-    .btn-danger{
-        color: #df0024;
-        font-size: 30px;
-    }
-    
-    .btn-info {
-        color:#02d9db;
-        font-size: 30px;
-    }
-    
-    .btn-info:hover {
-        color: #02a3da;
-        font-size: 35px;
-        margin-left: 20%;
-        border-color: #02a3da;
-    
-    }
- }
-
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991.98px) {
-
-    body{
-        font-family: system-ui,sans-serif,monospace;
-        margin: 0;
-    }
-
-    .nav{
-        background-color: #02a4dacc;
-        display: flex; 
-        align-items: baseline;
-    }
-
-    .menu ul{
-        display: flex;
-        list-style: none;
-        margin: auto;
-        align-items: center;
-        height: 65px;
-    }
-
-    .menu a{
-        display: flex;
-        font-size: 30px;
-        text-decoration: none;
-        color: #fff;
-        margin: 20px 35px 20px 35px;
-    }
-    
-    .main{ 
-        width: 350px;
-        height: 390px;
-        margin: auto;
-        margin-top: 40px;
-        border-radius: 40px;
-        background-color: rgb(239, 244, 247);
-        box-shadow: inset 0 0 0 2px rgb(255 255 255), 0.3em 0.3em 1em rgb(0 0 0 / 15%);
-        padding: 20px;
-    }
-    
-    .title h1{
-        font-size: 20px;
-        font-family: system-ui,sans-serif,monospace;
-        text-align: center;
-        margin: auto;
-        margin-top: 5px;
-        margin-bottom: 20px;
-        padding: 10px;
-        width: 90%; 
-        border-radius: 10px;
-        font-weight: bold;
-        color: #0c7ca1cc;
-        background-color: #ffc703a6;   
-    }
-    
-    .box {
-        font-family: 'Courier New', Courier, monospace;
-        margin: 10px 0;
-        border-radius: 5px;
-        border: 1px solid #39c;
-        width: 100%; 
-    }
-    
-    .box legend{
-        color: #02a3da;
-        margin-left: 10px;
-        padding: 0 1px;
-    }
-    
-    .box input{
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 13px;
-        outline: none;
-        border: none;
-        background-color: #02a4da3b;
-        border-radius: 5px 5px ;
-        padding: 8px; 
-        margin: 4px 10px 10px 12px; 
-        width: 88%;
-        height: 13px;
-    }
-     
-    .box div{
-       display: flex;
-    align-items: baseline;
-    width: 90%;
-   }
-
-   .box label{
-       margin-left: 10px;
-    }
-
-    .box div label{
-        font-size: 12px;
-    }
-
-    .balance input{
-        font-size: 20px;
-        font-weight: bold;
-    }
-    .btn{
-        display: flex;
-        justify-content: space-around;
-        padding: 20px;
-    }
-    
-    .btn-danger{
-        color: #df0024;
-        font-size: 30px;
-    }
-    
-    .btn-info {
-        color:#02d9db;
-        font-size: 30px;
-    }
-    
-    .btn-info:hover {
-        color: #02a3da;
-        font-size: 35px;
-        margin-left: 20%;
-        border-color: #02a3da;
-    
-    }
- }
-
-/* Large devices (desktops, 992px and up)*/
-
-@media (min-width: 992px) and (max-width: 1199.98px){
     body{
         font-family: system-ui,sans-serif,monospace;
         margin: 0;
@@ -493,150 +230,18 @@
     .btn{
         display: flex;
         justify-content: space-around;
-        padding: 20px;
-    }
-    
-    .btn-danger{
-        color: #df0024;
-        font-size: 30px;
-    }
-    
-    .btn-info {
-        color:#02d9db;
-        font-size: 30px;
-    }
-    
-    .btn-info:hover {
-        color: #02a3da;
-        font-size: 35px;
-        margin-left: 20%;
-        border-color: #02a3da;
-    
-    }
- }
-
-/* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { 
-    body{
-        font-family:  system-ui,sans-serif,monospace;
-        margin: 0;
-    }
-
-    .nav{
-        background-color: #02a4dacc;
-        display: flex; 
-        align-items: baseline;
-    }
-
-    .menu ul{
-        display: flex;
-        list-style: none;
-        margin: auto;
-        align-items: center;
-        height: 65px;
-    }
-
-    .menu a{
-        display: flex;
-        font-size: 30px;
-        text-decoration: none;
-        color: #fff;
-        margin: 20px 35px 20px 35px;
-    }
-    
-    .main{ 
-        width: 350px;
-        height: 390px;
-        margin: auto;
-        margin-top: 40px;
-        border-radius: 40px;
-        background-color: rgb(239, 244, 247);
-        box-shadow: inset 0 0 0 2px rgb(255 255 255), 0.3em 0.3em 1em rgb(0 0 0 / 15%);
-        padding: 20px;
-    }
-    
-    .title h1{
-        font-size: 20px;
-        font-family: system-ui,sans-serif,monospace;
-        text-align: center;
-        margin: auto;
-        margin-top: 5px;
-        margin-bottom: 20px;
         padding: 10px;
-        width: 90%; 
-        border-radius: 10px;
-        font-weight: bold;
+    }
+    
+    .btn a{
+        padding: 15px;
+        text-decoration: none;
+        background-color: rgb(239, 244, 247);
+        border: 1px solid rgba(0, 0, 0, 0.616);
+        border-radius: 6px;
         color: #0c7ca1cc;
-        background-color: #ffc703a6;   
-    }
-    
-    .box {
-        font-family: 'Courier New', Courier, monospace;
-        margin: 10px 0;
-        border-radius: 5px;
-        border: 1px solid #39c;
-        width: 100%; 
-    }
-    
-    .box legend{
-        color: #02a3da;
-        margin-left: 10px;
-        padding: 0 1px;
-    }
-    
-    .box input{
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 14px;
-        outline: none;
-        border: none;
-        background-color: #02a4da3b;
-        border-radius: 5px 5px ;
-        padding: 8px; 
-        margin: 4px 10px 10px 12px; 
-        width: 88%;
-        height: 13px;
-    }
-    
-    .balance input{
-        font-size: 20px;
         font-weight: bold;
-    }
-       
-    .box div{
-       display: flex;
-       align-items: baseline;
-   }
-
-   .box label{
-       margin-left: 10px;
-    }
-
-    .box input{
-       margin-right: 14px;
-    }
-    
-    .btn{
-        display: flex;
-        justify-content: space-around;
-        padding: 20px;
-    }
-    
-    .btn-danger{
-        color: #df0024;
-        font-size: 30px;
-    }
-    
-    .btn-info {
-        color:#02d9db;
-        font-size: 30px;
-    }
-    
-    .btn-info:hover {
-        color: #02a3da;
-        font-size: 35px;
-        margin-left: 20%;
-        border-color: #02a3da;
-    
+        font-size: 18px;
     }
  }
-    
+

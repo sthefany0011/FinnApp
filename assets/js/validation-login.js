@@ -69,7 +69,11 @@ document.addEventListener("DOMContentLoaded", function(e) {
             msgError.setAttribute('style', 'display: block');
             msgError.innerHTML = 'Preencha todos os campos corretamente antes de cadastrar';
             msgSuccess.innerHTML = '';
-            msgSuccess.setAttribute('style', 'display: none');         
+            msgSuccess.setAttribute('style', 'display: none');
+            
+            setTimeout(()=>{
+                window.location.href = 'file:///C:/Users/Mariana/Documents/Cursos/Neon/desafioNeon/ProjetoNeon/launch.html'
+            }, 3000)
        }
        
    })

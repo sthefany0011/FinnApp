@@ -94,6 +94,11 @@ img{
     border: 1px solid #ffc803ef;
     color: black;
 }
+
+.btn-second a{
+    text-decoration:none;
+    color: white;
+}
 .first-content {
     display: flex;
 }
@@ -156,21 +161,45 @@ input:-webkit-autofill
     -webkit-text-fill-color: #000 !important;
 }
 #msgName{
-    font-size: 12px;
+    font-size: 11px;
+    margin-left: 10px;
+    width: 93%;
     position: absolute;
-    margin-top: 56px;
+    color: rgba(0, 0, 0, 0);
+}
+.msg-error{
+    font-size: 11px;
+    margin-left: 10px;
+    width: 93%;
+    position: relative !important;
+    color: #fc3535 !important;
 }
 
+
 #msgEmail{
-    font-size: 12px;
+    font-size: 11px;
+    margin-left: 10px;
+    width: 93%;
     position: absolute;
-    margin-top: 56px;
+    color: rgba(0, 0, 0, 0);
+}
+
+.msgEmail-error{
+    position: relative !important;
+    color: #fc3535 !important;
 }
 
 #msgPassword{
-    font-size: 12px;
+    font-size: 11px;
+    margin-left: 10px;
+    width: 93%;
     position: absolute;
-    margin-top: 56px;
+    color: rgba(0, 0, 0, 0);
+}
+
+#msgPassword-error{
+    position: relative !important;
+    color: #fc3535 !important;
 }
 
 .label-input {
@@ -178,6 +207,14 @@ input:-webkit-autofill
     display: flex;
     align-items: center;
     margin: 8px;
+}
+
+.label-correto {
+    border: 2px solid #1ed12d;
+}
+
+.label-error {
+    border: 2px solid #fc3535;
 }
 
 .icon-modify {
@@ -228,13 +265,13 @@ input:-webkit-autofill
     border-bottom-left-radius: 0;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    animation: slidein 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
+    animation: slidein 1.0s; /*MODIFIQUEI DE 3s PARA 1.3s*/
 
     z-index: 12;
 }
 
 .sign-up-js .content::before {
-    animation: slideout 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
+    animation: slideout 1.0s; /*MODIFIQUEI DE 3s PARA 1.3s*/
 
     z-index: 12;
 }
@@ -258,55 +295,53 @@ input:-webkit-autofill
 
     z-index: -1;
     position: relative;
-    animation: deslocamentoEsq 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
+    animation: deslocamentoEsq 1.0s; /*MODIFIQUEI DE 3s PARA 1.3s*/
 }
 
 .sign-up-js .second-content .second-column {
     position: relative;
     z-index: -1;
-    animation: deslocamentoDir 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
+    animation: deslocamentoDir 1.0s; /*MODIFIQUEI DE 3s PARA 1.3s*/
 }
 
+#msg{
+    text-align: center;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0);
+    position: absolute;
+  }
+  
+  .msgError{
+    color: #ff0000 !important;
+    position: relative !important;
+    background-color: #ff000079;
+  }
 
-#msgError{
-    text-align: center;
-    color: #ff0000;
-    border-radius: 4px;
-    display: none;
-    font-size: 12px;
-    margin-top: 10px;
+  .msgCorreto{
+    color: #1ed12d !important;
+    position: relative !important;
+    background-color: #1ed12d71;
   }
-  
-  #msgSuccess{
-    text-align: center;
-    color: #00bb00;
-    background-color: #bbffbe;
-    border-radius: 4px;
-    display: none;
-    font-size: 12px;
-    margin-top: 10px;
-  }
-  
 /*ANIMAÇÃOO CSS PARA O CONTEÚDO*/
 
 @keyframes deslocamentoEsq {
 
     from {
         left: 0;
-        opacity: 1;
+        opacity: .2;
         z-index: 12;
     }
 
     25% {
         left: -80px;
-        opacity: .5;
-        /* z-index: 12; NÃO HÁ NECESSIDADE */
+        opacity: 0;
     }
 
     50% {
         left: -100px;
-        opacity: .2;
-        /* z-index: 12; NÃO HÁ NECESSIDADE */
+        opacity: 0;
     }
 
     to {
@@ -321,22 +356,23 @@ input:-webkit-autofill
 
     from {
         left: 0;
+        opacity: .2;
         z-index: 12;
     }
 
     25% {
         left: 80px;
-        /* z-index: 12;  NÃO HÁ NECESSIDADE*/
+        opacity: 0;
     }
 
     50% {
         left: 100px;
-        /* z-index: 12; NÃO HÁ NECESSIDADE*/
-        /* background-color: yellow;  Exemplo que dei no vídeo*/
+        opacity: 0;
     }
 
     to {
         left: 110px;
+        opacity: 0;
         z-index: -1;
     }
 }
@@ -351,21 +387,6 @@ input:-webkit-autofill
         width: 40%;
     }
 
-    25% {
-        left: 5%;
-        width: 50%;
-    }
-
-    50% {
-        left: 25%;
-        width: 60%;
-    }
-
-    75% {
-        left: 45%;
-        width: 50%;
-    }
-
     to {
         left: 60%;
         width: 40%;
@@ -377,21 +398,6 @@ input:-webkit-autofill
     from {
         left: 60%;
         width: 40%;
-    }
-
-    25% {
-        left: 45%;
-        width: 50%;
-    }
-
-    50% {
-        left: 25%;
-        width: 60%;
-    }
-
-    75% {
-        left: 5%;
-        width: 50%;
     }
 
     to {

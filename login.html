@@ -16,33 +16,40 @@
                 <h2 class="title title-primary">Bem Vindo!</h2>
                 <p class="description description-primary">Para se manter conectado com a gente</p>
                 <p class="description description-primary">por favor faça o login com suas informações pessoais</p>
-                <button id="signin" class="btn btn-primary">Entre</button>
+                <button id="signin" class="btn btn-primary">Entrar</button>
             </div>    
             <div class="second-column">
                 <h2 class="title title-second">Crie sua conta</h2>                
                 <form class="form">
                     <!--Input : Name-->
-                    <label class="label-input" id="labelNome" for="nome">
-                        <i class="far fa-user icon-modify"></i>
-                        <input type="text" name="nome" id="name" placeholder="Name" >
-                        <p id="msgName"></p>
-                    </label>
+                    <div class="formulario__grupo">
+                        <label class="label-input" id="labelNome" for="nome">
+                            <i class="far fa-user icon-modify"></i>
+                            <input type="text" class="formulario__input" name="name" id="name" placeholder="Nome" >
+                        </label>
+                    </div>
+                    <p id="msgName"></p>
+
                     <!--Input : Email-->
-                    <label class="label-input" id="label" for="email">
-                        <i class="far fa-envelope icon-modify"></i>
-                        <input type="email" id="email" for="email" placeholder="Email" >
-                        <p id="msgEmail"></p>
-                    </label>
+                    <div class="formulario__grupo">
+                        <label class="label-input" id="labelEmail" for="email">
+                            <i class="far fa-envelope icon-modify"></i>
+                            <input type="email" id="email" for="email" placeholder="Email">
+                        </label>
+                    </div>
+                    <p id="msgEmail" ></p>
+
                     <!--Input : Senha-->
-                    <label class="label-input" id="label" for="password">
+                    <label class="label-input" id="labelPassword" for="password">
                         <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" name="password" id="password"  placeholder="Password" >
-                        <p id="msgPassword"></p>
+                        <input type="password" name="password" id="password"  placeholder="Password"  >
                     </label>
-                    <div id='msgError'></div>
-                    <div id='msgSuccess'></div>
-                    <button id="btn" class="btn btn-second">Cadastrar</button>        
+                    <p id="msgPassword"></p>
+
+                    <div id='msg'></div>
+
                 </form>
+                <button id="btn" class="btn btn-second">Cadastrar</button>        
             </div><!-- second column -->
         </div><!-- first content -->
         <div class="content second-content">

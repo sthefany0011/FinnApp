@@ -1,0 +1,14 @@
+<%- include('nav') -%>
+
+<form action="/crear" method="post">
+    <div class="form-horizontal">
+    <%- include('editorCentral') -%>
+    <div class="form-group row">
+    <label class="col-form-label col-sm-2"></label>
+    <div class="col-sm-10">
+    <input type="submit" value="Crear Registro" class=" btn btn-default btn-success" />
+    <a class="btn btn-outline-dark cancel" href="/menu">Cancelar</a>
+    </div>
+    </div>
+    </div>
+    </form>

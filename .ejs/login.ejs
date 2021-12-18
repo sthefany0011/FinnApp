@@ -1,87 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="assets/css/login.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Audiowide"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
-    />
-
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
-  </head>
-  <body>
-    <header>
-
-    </header>
-    <div class="pen-title">
-      <img src="assets/img/login.png" alt="" />
-    </div>
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
     <div class="container">
-      <div></div>
-      <div class="card">
-        <h1 class="title">Entrar</h1>
-        <form>
-          <div class="input-container">
-            <input type="" id="" />
-            <label for="">Usuario</label>
-            <div class="bar"></div>
-          </div>
-          <div class="input-container">
-            <input type="" id="" />
-            <label for="">Senha</label>
-            <div class="bar"></div>
-          </div>
-          <div class="button-container">
-            <a href="/menu">Entrar</a>
-          </div>
-          <div class="footer"><a href="#">Esqueceu sua senha?</a></div>
-        </form>
-      </div>
-      <div class="card alt">
-        <div class="toggle"><i class="fas fa-user-plus"></i></div>
-        <h1 class="title">
-          Cadastre-se
-          <div class="close"></div>
-        </h1>
-        <form>
-          <div class="input-container">
-            <input type="" id="" required="" />
-            <label for="">Usuario</label>
-            <div class="bar"></div>
-          </div>
-          <div class="input-container">
-            <input type="" id="" required="" />
-            <label for="">Senha</label>
-            <div class="bar"></div>
-          </div>
-          <div class="input-container">
-            <input type="" id="" required="" />
-            <label for="">Repetir Senha</label>
-            <div class="bar"></div>
-          </div>
-          <div class="button-container">
-            <a href="/menu ">Cadastrar</a>
-          </div>
-        </form>
-      </div>
+        <div class="content first-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Bem Vindo!</h2>
+                <p class="description description-primary">Para se manter conectado com a gente</p>
+                <p class="description description-primary">por favor faça o login com suas informações pessoais</p>
+                <button id="signin" class="btn btn-primary">Entrar</button>
+            </div>    
+            <div class="second-column">
+                <h2 class="title title-second">Crie sua conta</h2>                
+                <form class="form">
+                  
+                    <!--Input : Name-->
+                    <div class="formulario__grupo">
+                        <label class="label-input" id="labelNome" for="nome">
+                            <i class="far fa-user icon-modify"></i>
+                            <input type="text" class="formulario__input" name="name" id="name" placeholder="Nome" >
+                        </label>
+                    </div>
+                    <p id="msgName"></p>
+
+                    <!--Input : Email-->
+                    <div class="formulario__grupo">
+                        <label class="label-input" id="labelEmail" for="email">
+                            <i class="far fa-envelope icon-modify"></i>
+                            <input type="email" id="email" for="email" placeholder="Email">
+                        </label>
+                    </div>
+                    <p id="msgEmail" ></p>
+
+                    <!--Input : Senha-->
+                    <label class="label-input" id="labelPassword" for="password">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" name="password" id="password"  placeholder="Password"  >
+                    </label>
+                    <p id="msgPassword"></p>
+
+                    <div id='msg'></div>
+
+                </form>
+                <button id="btn" class="btn btn-second">Cadastrar</button>        
+            </div><!-- second column -->
+        </div><!-- first content -->
+        <div class="content second-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Olá Neowner!</h2>
+                <p class="description description-primary">Insira seus dados pessoais</p>
+                <p class="description description-primary">e comece a jornada conosco</p>
+                <button id="signup" class="btn btn-primary">Increva-se</button>
+            </div>
+            <div class="second-column">
+                <h2 class="title title-second">Login</h2>
+                
+                <form class="form">
+
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+                
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Password">
+                    </label>
+                
+                    <a class="password" href="#">Esqueceu a senha?</a>
+                    <button class="btn btn-second">Entrar</button>
+                </form>
+            </div><!-- second column -->
+        </div><!-- second-content -->
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script id="rendered-js">
-      $(".toggle").on("click", function () {
-        $(".container").stop().addClass("active");
-      });
-
-      $(".close").on("click", function () {
-        $(".container").stop().removeClass("active");
-      });
-    </script>
-  </body>
+    <script src="assets/js/login.js"></script>
+    <script src="assets/js/validation-login.js"></script>
+</body>
 </html>

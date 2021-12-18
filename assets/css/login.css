@@ -316,13 +316,11 @@ input:-webkit-autofill
   .msgError{
     color: #ff0000 !important;
     position: relative !important;
-    background-color: #ff000079;
   }
 
   .msgCorreto{
     color: #1ed12d !important;
     position: relative !important;
-    background-color: #1ed12d71;
   }
 /*ANIMAÇÃOO CSS PARA O CONTEÚDO*/
 

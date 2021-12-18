@@ -1,0 +1,41 @@
+<%- include('nav') -%>
+
+<main>          
+    <div class= main>
+        <div class="title">
+            <h1>NOVOS LANÇAMENTOS</h1>
+        </div>
+        <div>
+          <form action="" class="form" id="form" method="POST" name="form">
+              <fieldset class="box balence">
+                  <legend>Saldo</legend>
+                 
+              </fieldset>
+              <div id="block">
+                  <fieldset class="box">
+                      <legend class="col-form-label col-sm-2 pt-0">Lançamentos por Período</legend>
+                      <div>
+                          <label for="De">De</label>
+                          <input type="date" name = "De">
+                      </div>
+                      <div>
+                          <label for= "Até">Até</label>
+                          <input type="date" name = "Até">
+                      </div>
+                  </fieldset>
+              </div>
+                  <fieldset class="box">
+                      <legend>Lançamentos por Título</legend>
+                      <input type="text" placeholder="Nome da transação">
+                      
+                  </fieldset>
+              <div class="btn">
+                  <a class="btn-danger"href="" ><i class="fas fa-question-circle"></i></a>
+                  <a type="submit" href="/lancamentos" class="btn-info"><i class="fas fa-arrow-circle-right"></i></a>
+              </div>
+           </form> 
+        </div>
+    </div>
+  </main>
+
+  <%- include('footer') -%>

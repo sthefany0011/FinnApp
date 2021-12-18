@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
    
   
    nome.addEventListener('keyup',() =>{
-       if(nome.value.length < 3 || typeof nome.value != "string"){
+       if(nome.value.length < 3 && nome.value != /\d/g,"" ){
            msgNome.innerHTML = "Insira de 4 a 16 caracteres contendo apenas letras.";
            msgNome.classList.add("msg-error");
            labelNome.classList.add("label-error"); 
@@ -86,9 +86,10 @@ document.addEventListener("DOMContentLoaded", function() {
    btn.addEventListener('click', function cadastrar(e){
        
        if(validaNome && validaEmail && validaSenha){
-            msg.innerHTML = "Cadastro realizado com sucesso.";
+            msg.innerHTML = "Cadastro realizado com sucesso!";
             msg.classList.remove("msgError"); 
-            msg.classList.add("msgCorreto");      
+            msg.classList.add("msgCorreto");  
+                
             
        } else {
             msg.innerHTML = "Preencha todos os campos corretamente.";
@@ -108,11 +109,12 @@ document.addEventListener("DOMContentLoaded", function() {
         setTimeout(function(){
             let signinbtn = document.querySelector("#signin");
             signinbtn.click();
+            
             formulario.reset();
             msg.classList.remove("msgCorreto"); 
             labelNome.classList.remove("label-correto");
             labelEmail.classList.remove("label-correto");
-            labelSenha.classList.remove("label-correto")
+            labelSenha.classList.remove("label-correto");
             }, 900);
             // reset as infos do formulario
        } else {

@@ -10,7 +10,7 @@
               <fieldset class="box balence">
                   <legend>Saldo</legend>
                   <% ad.forEach(function(row){ %>
-                    <%= row.valor%>
+                    <%= row.saldo%>
                   <% }); %>
                    
               </fieldset>
@@ -41,10 +41,11 @@
                               <label class="form-check-label" for="gridRadios2">Saída</label>
                           </div>
                       </div>
+
               </fieldset>
               <div class="btn">
                   <a class="btn-danger"href="" ><i class="fas fa-question-circle"></i></a>
-                  <a type="submit" href="/menu" class="btn-info"><i class="fas fa-arrow-circle-right"></i></a>
+                  <button type="submit" href="/menu" class="btn-info"><i class="fas fa-arrow-circle-right"></i></button>
               </div>
            </form> 
         </div>

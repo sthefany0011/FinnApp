@@ -9,9 +9,6 @@
           <form action="" class="form" id="form" method="POST" name="form">
               <fieldset class="box balence">
                   <legend>Saldo</legend>
-                  <% ad.forEach(function(row){ %>
-                    <%= row.saldo%>
-                  <% }); %>
                  
               </fieldset>
               <div id="block">
@@ -29,7 +26,7 @@
               </div>
                   <fieldset class="box">
                       <legend>Lançamentos por Título</legend>
-                      
+                      <input type="text" placeholder="Nome da transação">
                       
                   </fieldset>
               <div class="btn">

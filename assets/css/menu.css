@@ -37,6 +37,8 @@
         background-color: rgb(239, 244, 247);
         box-shadow: inset 0 0 0 2px rgb(255 255 255), 0.3em 0.3em 1em rgb(0 0 0 / 15%);
         padding: 20px;
+        margin-bottom: 50px;
+
     }
     
     .title h1{
@@ -54,8 +56,13 @@
         background-color: #08baf7;   
     }
     
+    #block{
+        
+        width: 100%;
+    }
+
     #block .box {
-        height: 89px;
+        height: 100%;
     }
     
     .box {
@@ -71,7 +78,7 @@
         color: #02a3da;
         margin-left: 10px;
         padding: 0 1px;
-        font-size: 12px;
+        font-size: 11px;
     }
     
     .box input{
@@ -82,7 +89,7 @@
         background-color: #02a4da3b;
         border-radius: 5px 5px ;
         padding: 8px; 
-        margin: 4px 10px 10px 12px; 
+        margin: 4px 10px 10px 7px; 
         width: 81%;
         height: 9px;
     }
@@ -100,13 +107,46 @@
        font-size: 12px;
     }
 
+    #labelDe{
+        margin-right: 7px;    
+     }
+
     .box div input{
-       width: 81%; 
+       width: 59%; 
     }
 
     .balance input{
         font-size: 20px;
         font-weight: bold;
+    }
+
+    #btnFiltrar{
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        text-transform: uppercase;
+        font-size: 10px;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-weight: bold;
+        align-self: center;
+        border: none;
+        margin-top: 0.8rem;
+        background-color: #02a3da00;
+        border: 1px solid #02a3da;
+        width: 100%;      
+    }
+    
+    #btnFiltrar:hover{
+        background-color: #ffc803ef;
+        border: 1px solid #ffc803ef;
+    } 
+
+    #btnFiltrar img{
+        width: 17px;
+        height: 18px;
     }
    
     #btnNovoLançamento{
@@ -114,19 +154,19 @@
         margin: auto;
         border-radius: 15px;
         text-transform: uppercase;
-        color: #fff;
+        color: rgb(0, 0, 0);
         font-size: 10px;
-        padding: 10px 50px;
+        padding: 10px 25px;
         cursor: pointer;
         font-weight: bold;
         width: 79%;
         align-self: center;
         border: none;
         margin-top: 0.8rem;
-        background-color: #02a3da;
+        background-color: #02a4da00;
         border: 1px solid #02a3da;
     }
-    #btn:hover{
+    #btnNovoLançamento:hover{
         background-color: #ffc803ef;
         border: 1px solid #ffc803ef;
         color: black;
@@ -171,6 +211,8 @@
         background-color: rgb(239, 244, 247);
         box-shadow: inset 0 0 0 2px rgb(255 255 255), 0.3em 0.3em 1em rgb(0 0 0 / 15%);
         padding: 20px;
+        margin-bottom: 50px;
+
     }
     
     .title h1{
@@ -194,8 +236,14 @@
         border-radius: 5px;
         border: 1px solid #39c;
         width: 100%; 
+        
     }
-    
+
+    #block{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     .box legend{
         color: #02a3da;
         margin-left: 10px;
@@ -232,13 +280,44 @@
     .box input{
        margin-right: 14px;
     }
+
+    #btnFiltrar{
+        height: 81px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+        border-radius: 15px;
+        text-transform: uppercase;
+        font-size: 10px;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-weight: bold;
+        align-self: center;
+        border: none;
+        margin-top: 0.8rem;
+        background-color: #02a4da00;
+        border: 1px solid #02a3da;
+        width: 42px;       
+    }
+
+    #btnFiltrar:hover{
+        background-color: #ffc803ef;
+        border: 1px solid #ffc803ef;
+        color: black;
+    } 
+
+    #btnFiltrar img{
+        width: 20px;
+        height: 22px;
+    }
     
     #btnNovoLançamento{
         display: block;
         margin: auto;
         border-radius: 15px;
         text-transform: uppercase;
-        color: #fff;
+        color: rgb(0, 0, 0);
         font-size: 10px;
         padding: 10px 50px;
         cursor: pointer;
@@ -247,7 +326,7 @@
         align-self: center;
         border: none;
         margin-top: 0.8rem;
-        background-color: #02a3da;
+        background-color: #02a4da00;
         border: 1px solid #02a3da;
     }
     #btnNovoLançamento:hover{

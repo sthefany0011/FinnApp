@@ -103,7 +103,8 @@ document.addEventListener("DOMContentLoaded", function() {
     if(validaValor && validaData && validaTitulo){
         msg.innerHTML = "Cadastro realizado com sucesso!";
         msg.classList.remove("msgError"); 
-        msg.classList.add("msgCorreto");  
+        msg.classList.add("msgCorreto");
+        
             
     }
     else{
@@ -111,7 +112,8 @@ document.addEventListener("DOMContentLoaded", function() {
         msg.classList.remove("msgCorreto"); 
         msg.classList.add("msgError");
         setTimeout(function(){
-            msg.classList.remove("msgError"); 
+            msg.classList.remove("msgError");
+            msg.innerHTML = "";
             }, 1500);
         return;
     }
@@ -125,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function() {
             let btn = document.querySelector("#btn");
             btn.click();
             location.href = "menu.html";
-            msg.classList.remove("msgCorreto"); 
+            msg.innerHTML = ""; 
             formulario.reset();
             bordaValor.classList.remove("bordaCorreto");
             bordaData.classList.remove("bordaCorreto");

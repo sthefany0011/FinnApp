@@ -4,8 +4,24 @@ document.addEventListener("DOMContentLoaded", function() {
 
    let formulario = document.querySelector(".form");
    
-   let email = document.querySelector(".email");
-   let msgEmail = document.querySelector(".msgEmail");
+   nome.addEventListener('keyup',() =>{
+       if(nome.value.length < 3 && nome.value != /\d/g,"" ){
+           msgNome.innerHTML = "Insira de 4 a 16 caracteres contendo apenas letras.";
+           msgNome.classList.add("msg-error");
+           labelNome.classList.add("label-error"); 
+           validaNome = false;
+       }
+       else{  
+           msgNome.classList.remove("msg-error");  
+           labelNome.classList.remove("label-error");
+           labelNome.classList.add("label-correto");
+           validaNome = true;
+       }
+   });
+
+
+   let email = document.querySelector("#email");
+   let msgEmail = document.querySelector("#msgEmail");
    let labelEmail = document.querySelector("#labelEmail");
    let validaEmail = false;
    
@@ -16,6 +32,22 @@ document.addEventListener("DOMContentLoaded", function() {
 
    let msg = document.querySelector("#msg");
    
+  
+   nome.addEventListener('keyup',() =>{
+       if(nome.value.length < 3){
+           msgNome.innerHTML = "Insira de 4 a 16 caracteres contendo apenas letras.";
+           msgNome.classList.add("msg-error");
+           labelNome.classList.add("label-error"); 
+           validaNome = false;
+       }
+       else{  
+           msgNome.classList.remove("msg-error");  
+           labelNome.classList.remove("label-error");
+           labelNome.classList.add("label-correto");
+           validaNome = true;
+       }
+   });
+
    email.addEventListener('keyup',() =>{
        if(!validarEmail(email)){
            msgEmail.innerHTML = 'Insira um email válido.';
@@ -64,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function() {
              
    btn.addEventListener('click', function cadastrar(e){
        
-       if(validaEmail && validaSenha){
+       if(validaNome && validaEmail && validaSenha){
             msg.innerHTML = "Cadastro realizado com sucesso!";
             msg.classList.remove("msgError"); 
             msg.classList.add("msgCorreto");  
@@ -76,6 +108,7 @@ document.addEventListener("DOMContentLoaded", function() {
             msg.classList.add("msgError");
             setTimeout(function(){
                 msg.classList.remove("msgError"); 
+                msg.innerHTML = "";
                 }, 1500);
             return;
        }
@@ -106,9 +139,10 @@ document.addEventListener("DOMContentLoaded", function() {
            msg.classList.add("msgError");
        }   
    });
+
+        
+   
+    
 });
 
- 
-
- 
  

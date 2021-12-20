@@ -30,21 +30,35 @@
                     <legend>Saldo</legend>
                     <input type="text">
                 </fieldset>
-                <div id="block">
+             
+
+                <!--Input : Valor-->
+                
                     <fieldset class="box value">
                         <legend class="col-form-label col-sm-2 pt-0">Valor</legend>
-                        <label for="R$">R$</label>
-                        <input type="text" name="R$" placeholder="0,00">
+                        <div>
+                            <label id="labelValor">R$</label>
+                            <input type="text"  placeholder="0,00" id="valor"  >
+                        </div>
                     </fieldset>
-                    <fieldset class="box date">
-                        <legend class="col-form-label col-sm-2 pt-0">Data</legend>
-                        <input type="date">
-                    </fieldset>
-                </div>
-                    <fieldset class="box">
+                    <p id="msgValor"></p>
+                
+
+                <!--Input : Data-->
+                <fieldset class="box date">
+                    <legend class="col-form-label col-sm-2 pt-0">Data</legend>
+                    <input type="date" id="data">
+                </fieldset>
+                <p id="msgData"></p>
+
+                <!--Input : Título de Lançamento-->
+                    <fieldset class="box titulo" >
                         <legend>Título de Lançamentos</legend>
-                        <input type="text" placeholder="Nome da transação">
+                        <input type="text" id="inputTitulo" placeholder="Nome da transação">
                     </fieldset>
+                    <p id="msgTitulo"></p>
+
+                    <!--Input : Checkbox-->
                     <fieldset class="box checkbox">
                         <legend class="col-form-label col-sm-2 pt-0">Tipo de Lançamento</legend>
                         <div class="col-sm-10">
@@ -58,15 +72,18 @@
                             </div>
                         </div>
                 </fieldset>
-                <div class="btn">
-                    <a class="btn-danger"href="" ><i class="fas fa-question-circle"></i></a>
-                    <a type="submit" href="menu.html" class="btn-info"><i class="fas fa-arrow-circle-right"></i></a>
-                </div>
+                <p id="msgCheckbox"></p>
+
+                <p id="msg"></p>
+                
              </form> 
+             <button id="btn">Cadastrar</button>
           </div>
       </div>
     </main>
 
+   
     
+    <script src="assets/js/validacao-lancamento.js"></script>
 </body>
 </html>

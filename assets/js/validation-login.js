@@ -112,6 +112,9 @@ document.addEventListener("DOMContentLoaded", function() {
             
             formulario.reset();
             msg.classList.remove("msgCorreto"); 
+            validaNome = false;
+            validaEmail = false;
+            validaSenha = false;
             labelNome.classList.remove("label-correto");
             labelEmail.classList.remove("label-correto");
             labelSenha.classList.remove("label-correto");

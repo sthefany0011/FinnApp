@@ -39,19 +39,19 @@
         padding: 20px;
     }
     
-     .title h1{
-        font-size: 13px;
+    .title h1{
+        font-size: 15px;
         font-family: system-ui,sans-serif,monospace;
         text-align: center;
         margin: auto;
         margin-top: 5px;
         margin-bottom: 20px;
         padding: 10px;
-        width: 90%; 
-        border-radius: 10px;
+        width: 95%; 
+        border-radius: 16px;
         font-weight: bold;
-        color: #0c7ca1cc;
-        background-color: #ffc703a6;   
+        color: white;
+        background-color: #08baf7;   
     }
     
     #block .box {
@@ -126,6 +126,11 @@
         background-color: #02a3da;
         border: 1px solid #02a3da;
     }
+    #btn:hover{
+        background-color: #ffc803ef;
+        border: 1px solid #ffc803ef;
+        color: black;
+    } 
 } 
 
 @media (min-width: 768px){
@@ -169,18 +174,18 @@
     }
     
     .title h1{
-        font-size: 20px;
+        font-size: 15px;
         font-family: system-ui,sans-serif,monospace;
         text-align: center;
         margin: auto;
         margin-top: 5px;
         margin-bottom: 20px;
         padding: 10px;
-        width: 90%; 
-        border-radius: 10px;
+        width: 95%; 
+        border-radius: 16px;
         font-weight: bold;
-        color: #0c7ca1cc;
-        background-color: #ffc703a6;   
+        color: white;
+        background-color: #08baf7;   
     }
     
     .box {
@@ -245,5 +250,10 @@
         background-color: #02a3da;
         border: 1px solid #02a3da;
     }
+    #btnNovoLançamento:hover{
+        background-color: #ffc803ef;
+        border: 1px solid #ffc803ef;
+        color: black;
+    } 
  }
 

@@ -176,7 +176,7 @@ input:-webkit-autofill
 }
 
 
-#msgEmail{
+.msgEmail{
     font-size: 11px;
     margin-left: 10px;
     width: 93%;
@@ -184,12 +184,8 @@ input:-webkit-autofill
     color: rgba(0, 0, 0, 0);
 }
 
-.msgEmail-error{
-    position: relative !important;
-    color: #fc3535 !important;
-}
 
-#msgPassword{
+.msgPassword{
     font-size: 11px;
     margin-left: 10px;
     width: 93%;
@@ -197,10 +193,6 @@ input:-webkit-autofill
     color: rgba(0, 0, 0, 0);
 }
 
-#msgPassword-error{
-    position: relative !important;
-    color: #fc3535 !important;
-}
 
 .label-input {
     background-color: #ecf0f1;
@@ -236,6 +228,7 @@ input:-webkit-autofill
     order: 1;
     z-index: -1;
 }
+
 .password {
     color: #34495e;
     font-size: 14px;
@@ -245,8 +238,6 @@ input:-webkit-autofill
 .password::first-letter {
     text-transform: capitalize;
 }
-
-
 
 .sign-in-js .first-content .first-column {
     z-index: -1;
@@ -310,17 +301,28 @@ input:-webkit-autofill
     display: none;
     position: absolute;
 }
+
+#msgLogin{
+    text-align: center;
+    font-size: 12px;
+    display: none;
+}
   
+
 .msgError{
-display: block !important;
-color: #ff0000 !important;
-position: relative !important;
+    display: block !important;
+    color: #ff0000 !important;
+    position: relative !important;
+    font-size: 11px;
+    text-align: center;
 }
 
 .msgCorreto{
 display: block !important;
 color: #1ed12d !important;
 position: relative !important;
+font-size: 11px;
+text-align: center;
 }
 
 /*ANIMAÇÃOO CSS PARA O CONTEÚDO*/
@@ -444,18 +446,18 @@ position: relative !important;
 
         from {
             top: 0;
-            opacity: 1;
+            opacity: 0.2;
             z-index: 12;
         }
     
         25% {
             top: -80px;
-            opacity: .5;
+            opacity: 0;
         }
     
         50% {
             top: -100px;
-            opacity: .2;
+            opacity: 0;
         }
     
         to {
@@ -471,19 +473,23 @@ position: relative !important;
         from {
             top: 0;
             z-index: 12;
+            opacity: .2;
         }
     
         25% {
             top: 80px;
+            opacity: 0;
         }
     
         50% {
             top: 100px;
+            opacity: 0;
         }
     
         to {
             top: 110px;
             z-index: -1;
+            opacity: 0;
         }
     }
     
@@ -494,21 +500,6 @@ position: relative !important;
         from {
             top: 0;
             height: 40%;
-        }
-    
-        25% {
-            top: 5%;
-            height: 50%;
-        }
-    
-        50% {
-            top: 25%;
-            height: 60%;
-        }
-    
-        75% {
-            top: 45%;
-            height: 50%;
         }
     
         to {
@@ -524,21 +515,6 @@ position: relative !important;
             height: 40%;
         }
     
-        25% {
-            top: 45%;
-            height: 50%;
-        }
-    
-        50% {
-            top: 25%;
-            height: 60%;
-        }
-    
-        75% {
-            top: 5%;
-            height: 50%;
-        }
-    
         to {
             top: 0;
             height: 40%;
@@ -551,11 +527,62 @@ position: relative !important;
     .form {
         width: 50%;
     }
+    
+    
+    #msgLogin{
+        text-align: center;
+        font-size: 12px;
+        display: none;
+    }
+      
+    .msgError{
+    display: block !important;
+    color: #ff0000 !important;
+    position: relative !important;
+    font-size: 11px;
+    text-align: center;
+    }
+    
+    .msgCorreto{
+    display: block !important;
+    color: #1ed12d !important;
+    position: relative !important;
+    font-size: 11px;
+    text-align: center;
+    }
 }
 
 @media screen and (max-width: 425px) {
     .form {
         width: 90%;
         
+    }
+    #msg{
+        text-align: center;
+        font-size: 12px;
+        display: none;
+        position: absolute;
+    }
+    
+    #msgLogin{
+        text-align: center;
+        font-size: 12px;
+        display: none;
+    }
+      
+    .msgError{
+        display: block !important;
+        color: #ff0000 !important;
+        position: relative !important;
+        font-size: 11px;
+        text-align: center;
+    }
+        
+    .msgCorreto{
+    display: block !important;
+    color: #1ed12d !important;
+    position: relative !important;
+    font-size: 11px;
+    text-align: center;
     }
 }

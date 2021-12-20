@@ -79,6 +79,7 @@ document.addEventListener("DOMContentLoaded", function() {
        if (mandouComSucesso) {
         setTimeout(function(){
             
+            
             location.href = "login.html";
             msg.innerHTML = ""; 
             formulario.reset();

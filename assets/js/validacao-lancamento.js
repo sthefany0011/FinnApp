@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function() {
         setTimeout(function(){
             let btn = document.querySelector("#btn");
             btn.click();
-
+            location.href = "menu.html";
             msg.classList.remove("msgCorreto"); 
             formulario.reset();
             bordaValor.classList.remove("bordaCorreto");

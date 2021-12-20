@@ -1,36 +1,26 @@
 document.addEventListener("DOMContentLoaded", function() {
     // quando esta função correr o DOM está acessível
-   let btn = document.querySelector("#btn");   
+      
+   let btnLogin = document.querySelector(".btnLogin");  
 
    let formulario = document.querySelector(".form");
    
-   nome.addEventListener('keyup',() =>{
-       if(nome.value.length < 3 && nome.value != /\d/g,"" ){
-           msgNome.innerHTML = "Insira de 4 a 16 caracteres contendo apenas letras.";
-           msgNome.classList.add("msg-error");
-           labelNome.classList.add("label-error"); 
-           validaNome = false;
-       }
-       else{  
-           msgNome.classList.remove("msg-error");  
-           labelNome.classList.remove("label-error");
-           labelNome.classList.add("label-correto");
-           validaNome = true;
-       }
-   });
+   let nome = document.querySelector("#name");
+   let msgNome = document.querySelector("#msgName");
+   let labelNome = document.querySelector("#labelNome");
+   let validaNome = false;
 
-
-   let email = document.querySelector("#email");
-   let msgEmail = document.querySelector("#msgEmail");
-   let labelEmail = document.querySelector("#labelEmail");
+   let email = document.querySelector("#emailCad");
+   let msgEmail = document.querySelector("#msgEmailCad");
+   let labelEmail = document.querySelector("#labelEmailCad");
    let validaEmail = false;
    
-   let senha = document.querySelector("#password");
-   let msgSenha = document.querySelector("#msgPassword");
-   let labelSenha = document.querySelector("#labelPassword");
+   let senha = document.querySelector("#passwordCad");
+   let msgSenha = document.querySelector("#msgPasswordCad");
+   let labelSenha = document.querySelector("#labelPasswordCad");
    let validaSenha = false;
 
-   let msg = document.querySelector("#msg");
+   let msg = document.querySelector("#msgCad");
    
   
    nome.addEventListener('keyup',() =>{
@@ -41,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
            validaNome = false;
        }
        else{  
+           msgNome.innerHTML = ""
            msgNome.classList.remove("msg-error");  
            labelNome.classList.remove("label-error");
            labelNome.classList.add("label-correto");
@@ -56,6 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
            validaEmail = false;
        }
        else{
+           msgEmail.innerHTML = ""
            msgEmail.classList.remove("msg-error");  
            labelEmail.classList.remove("label-error");
            labelEmail.classList.add("label-correto")
@@ -71,6 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
            validaSenha = false;
        }
        else{
+           msgSenha.innerHTML = "";
            msgSenha.classList.remove("msg-error");  
            labelSenha.classList.remove("label-error");
            labelSenha.classList.add("label-correto")
@@ -94,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function() {
         } 
     } 
              
-   btn.addEventListener('click', function cadastrar(e){
+    btnLogin.addEventListener('click', function cadastrar(e){
        
        if(validaNome && validaEmail && validaSenha){
             msg.innerHTML = "Cadastro realizado com sucesso!";
@@ -119,11 +112,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
        if (mandouComSucesso) {
         setTimeout(function(){
-            let signinbtn = document.querySelector("#signin");
-            signinbtn.click();
+            let signupbtn = document.querySelector("#signup");
+            signupbtn.click();
             
             formulario.reset();
             msg.classList.remove("msgCorreto"); 
+            msg.innerHTML = ""
             validaNome = false;
             validaEmail = false;
             validaSenha = false;

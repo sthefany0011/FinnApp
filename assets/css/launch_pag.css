@@ -137,6 +137,12 @@
         background-color: #08baf7;
         border: none;
     }
+
+    #btn:hover{
+        background-color: #ffc803ef;
+        border: 1px solid #ffc803ef;
+        color: black;
+    } 
     .msgValor{
         position: absolute;
         display: flex;
@@ -314,6 +320,12 @@
         margin-top: 0.8rem;
         background-color: #02a3da;
         border: 1px solid #02a3da;
+    }
+
+    #btn:hover{
+        background-color: #ffc803ef;
+        border: 1px solid #ffc803ef;
+        color: black;
     }
 
     #msg{

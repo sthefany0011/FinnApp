@@ -16,7 +16,11 @@ Financeiro com metas;
 
 ## Layout Web
 
-
+![Login](https://github.com/sthefany0011/ProjetoNeon/blob/master/assets/img/menu%20web.png)
+![Cadastro](https://github.com/sthefany0011/ProjetoNeon/blob/master/assets/img/menu%20web.png)
+![Recuperação de senha](https://github.com/sthefany0011/ProjetoNeon/blob/master/assets/img/recuperar%20senha.png)
+![lancamento](https://github.com/sthefany0011/ProjetoNeon/blob/master/assets/img/lancamentos.png)
+![view](https://github.com/sthefany0011/ProjetoNeon/blob/master/assets/img/menu%20web1.png)
 
 ## Escolha do nome.
 ![Logo](https://github.com/sthefany0011/ProjetoNeon/blob/master/assets/img/FinnApp.jpg)

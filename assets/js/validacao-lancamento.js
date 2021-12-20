@@ -1,77 +1,144 @@
-document.addEventListener("DOMContentLoaded", function(e) {
+document.addEventListener("DOMContentLoaded", function() {
     // quando esta função correr o DOM está acessível
-   let btn = document.querySelector("#btn");
-   
+   let btn = document.querySelector("#btn");   
 
+   let formulario = document.querySelector(".form");
+   
    let valor = document.querySelector("#valor");
    let msgValor = document.querySelector("#msgValor");
+   let bordaValor = document.querySelector(".value");
    let validaValor = false;
 
-   let descricao = document.querySelector("#descricao");
-   let msgDescricao = document.querySelector("#msgDescricao");
-   let validaDescricao = false;
+   let data = document.querySelector("#data");
+   let msgData = document.querySelector("#msgData");
+   let bordaData = document.querySelector(".date");
+   let validaData = false;
    
-   /*let senha = document.querySelector("#password");
-   let msgSenha = document.querySelector("#msgPassword");
-   let validaSenha = false;*/
+   let titulo = document.querySelector("#inputTitulo");
+   let msgTitulo = document.querySelector("#msgTitulo");
+   let bordaTitulo = document.querySelector(".titulo");
+   let validaTitulo = false;
 
-   let msgError = document.querySelector("#msgError");
-   let msgSuccess = document.querySelector("#msgSuccess");
+   /*
+   let checkboxEntrada = document.querySelector("#gridRadios1");
+   let checkboxSaida = document.querySelector("#gridRadios2");
+   let msgCheckbox = document.querySelector("#msgCheckbox");
+   let bordaCheckbox = document.querySelector(".checkbox");
+   let validaCheckbox = false;
+*/
+   let msg = document.querySelector("#msg");
    
   
-   nome.addEventListener('keyup',() =>{
-       if(valor.value <= 12 && valor.value.typeOf (valor.value) == 'number'){
-        
-           msgValor.setAttribute('style','color: red');
-           msgValor.innerHTML = 'Insira no mínimo 5 caracteres';
-           validaValor = false;
+   valor.addEventListener('keyup',() =>{
+       if(valor.value.length < 3){
+            msgValor.innerHTML = "Preencha o campo corretamente";
+            msgValor.classList.add("msg-error");
+            bordaValor.classList.remove("bordaCorreto");
+            bordaValor.classList.add("bordaError"); 
+            validaValor = false;
        }
-       else{
-            msgValor.setAttribute('style','color: green');
-            msgValor.innerHTML = 'Campo preenchido corretamente';          
-           validaValor = true;
-       }
-   });
-
-   email.addEventListener('keyup',() =>{
-       if(descricao.value <= 50){
-           msgDescricao.setAttribute('style', 'color: red');
-           msgDescricao.innerHTML = 'Insira no mínimo 5 caracteres';
-           validaDescricao = false;
-       }
-       else{
-           msgDescricao.setAttribute('style','color: green');
-           msgDescricao.innerHTML = 'Campo preenchido corretamente';
-           validaDescricao = true;
+       else{  
+            msgValor.innerHTML ='';
+            msgValor.classList.remove("msg-error");  
+            bordaValor.classList.remove("bordaError");
+            bordaValor.classList.add("bordaCorreto");
+            validaValor = true;
        }
    });
 
-   senha.addEventListener('keyup',() =>{
-        if(senha.value.length <= 5){
-            msgSenha.setAttribute('style', 'color: red')
-            msgSenha.innerHTML = 'Insira no mínimo 6 caracteres';
-            validaSenha = false;
-        }
-        else{
-            msgSenha.setAttribute('style','color: green');
-            msgSenha.innerHTML = 'Campo preenchido corretamente';
-            validaSenha = true;
-        }
+   data.addEventListener('keyup',() =>{
+    if(data.value.length <= 9 ||data.value.length >= 11 ){
+            msgData.innerHTML = "Preencha o campo corretamente";
+            msgData.classList.add("msg-error");
+            bordaData.classList.remove("bordaCorreto");
+            bordaData.classList.add("bordaError"); 
+            validaData = false;
+    }
+    else{  
+            msgData.innerHTML ='';
+            msgData.classList.remove("msg-error");  
+            bordaData.classList.remove("bordaError");
+            bordaData.classList.add("bordaCorreto");
+            validaData = true;
+    }
     });
 
-   btn.addEventListener('click', function cadastrar(e){
-       e.preventDefault();
-       if(validaValor && validaDescricao && validaData){
-            msgSuccess.setAttribute('style', 'display: block');
-            msgSuccess.innerHTML = 'Cadastrado com sucesso!';
-            msgError.setAttribute('style', 'display: none');
-            msgError.innerHTML = '';
+    titulo.addEventListener('keyup',() =>{
+        if(titulo.value == '' || titulo.value.length > 50 ){
+            msgTitulo.innerHTML = "Preencha o campo corretamente";
+            msgTitulo.classList.add("msg-error");
+            bordaTitulo.classList.remove("bordaCorreto");
+            bordaTitulo.classList.add("bordaError"); 
+            validaTitulo = false;
+        }
+        else{  
+            msgTitulo.innerHTML ='';
+            msgTitulo.classList.remove("msg-error");  
+            bordaTitulo.classList.remove("bordaError");
+            bordaTitulo.classList.add("bordaCorreto");
+            validaTitulo = true;
+        }
+    });
+/*
+    checkbox.addEventListener('keyup',() =>{
+        if(checkbox.value == '' || checkbox.value.length > 50 ){
+            msgCheckbox.innerHTML = "Preencha o campo corretamente";
+            msgCheckbox.classList.add("msg-error");
+            bordaCheckbox.classList.remove("bordaCorreto");
+            bordaCheckbox.classList.add("bordaError"); 
+            validaCheckbox = false;
+        }
+        else{  
+            msgCheckbox.innerHTML ='';
+            msgCheckbox.classList.remove("msg-error");  
+            bordaCheckbox.classList.remove("bordaError");
+            bordaCheckbox.classList.add("bordaCorreto");
+            validaCheckbox = true;
+        }
+    });
+   
+      */
+   btn.addEventListener('click', function novoLancamento(){
+      
+    if(validaValor && validaData && validaTitulo){
+        msg.innerHTML = "Cadastro realizado com sucesso!";
+        msg.classList.remove("msgError"); 
+        msg.classList.add("msgCorreto");  
+            
+    }
+    else{
+        msg.innerHTML = "Preencha todos os campos corretamente.";
+        msg.classList.remove("msgCorreto"); 
+        msg.classList.add("msgError");
+        setTimeout(function(){
+            msg.classList.remove("msgError"); 
+            }, 1500);
+        return;
+    }
+   
+  
+
+    let mandouComSucesso = true;
+
+       if (mandouComSucesso) {
+        setTimeout(function(){
+            let btn = document.querySelector("#btn");
+            btn.click();
+
+            msg.classList.remove("msgCorreto"); 
+            formulario.reset();
+            bordaValor.classList.remove("bordaCorreto");
+            bordaData.classList.remove("bordaCorreto");
+            bordaTitulo.classList.remove("bordaCorreto");
+            }, 900);
+            // reset as infos do formulario
        } else {
-            msgError.setAttribute('style', 'display: block');
-            msgError.innerHTML = 'Preencha todos os campos corretamente antes de cadastrar';
-            msgSuccess.innerHTML = '';
-            msgSuccess.setAttribute('style', 'display: none');         
-       }
-       
-   })
+           // mostra msg dizendo que envio falhou
+           msg.innerHTML = 'Error ao cadastrar Usuário'
+           msg.classList.remove("msgCorreto"); 
+           msg.classList.add("msgError");
+       }   
+    });
+
 });
+ 

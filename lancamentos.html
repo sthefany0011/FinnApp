@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Lançamento</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/launch_pag.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+</head>
+<body>
+    <header>
+        <nav class="nav menu">
+            <ul>
+                <a href="menu.html" ><i class="fas fa-home"></i></a>
+                <span><img src="assets/img/neon_logo.png" alt="" srcset=""></span>
+                <a  href="login.html"><i class="fas fa-sign-out-alt"></i></a>
+            </ul>
+        </nav>
+    </header>
+    <main>          
+      <div class= main>
+          <div class="title">
+              <h1>NOVOS LANÇAMENTOS</h1>
+          </div>
+          <div>
+            <form action="" class="form" id="form" method="POST" name="form">
+                <fieldset class="box balence">
+                    <legend>Saldo</legend>
+                    <input type="text">
+                </fieldset>
+             
+
+                <!--Input : Valor-->
+                
+                    <fieldset class="box value">
+                        <legend class="col-form-label col-sm-2 pt-0">Valor</legend>
+                        <div>
+                            <label id="labelValor">R$</label>
+                            <input type="text"  placeholder="0,00" id="valor"  >
+                        </div>
+                    </fieldset>
+                    <p id="msgValor"></p>
+                
+
+                <!--Input : Data-->
+                <fieldset class="box date">
+                    <legend class="col-form-label col-sm-2 pt-0">Data</legend>
+                    <input type="date" id="data">
+                </fieldset>
+                <p id="msgData"></p>
+
+                <!--Input : Título de Lançamento-->
+                    <fieldset class="box titulo" >
+                        <legend>Título de Lançamentos</legend>
+                        <input type="text" id="inputTitulo" placeholder="Nome da transação">
+                    </fieldset>
+                    <p id="msgTitulo"></p>
+
+                    <!--Input : Checkbox-->
+                    <fieldset class="box checkbox">
+                        <legend class="col-form-label col-sm-2 pt-0">Tipo de Lançamento</legend>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                <label class="form-check-label" for="gridRadios1">Entrada</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                <label class="form-check-label" for="gridRadios2">Saída</label>
+                            </div>
+                        </div>
+                </fieldset>
+                <p id="msgCheckbox"></p>
+
+                <p id="msg"></p>
+                
+             </form> 
+             <button id="btn">Cadastrar</button>
+          </div>
+      </div>
+    </main>
+
+   
+    
+    <script src="assets/js/validacao-lancamento.js"></script>
+</body>
+</html>

@@ -19,15 +19,19 @@ Financeiro com metas;
 
 
 ## Escolha do nome.
+![Logo](https://github.com/sthefany0011/ProjetoNeon/blob/master/assets/img/FinnApp.jpg)
+
 Escolhemos um nome que trás sentindo para o seguimento do produto.A ideia era que, o nome fosse smples e  trouxesse alguma junção com as palavras gestão financeira e tecnologia. Dessa forma chegamos ao nome  FinnApp.   
 
 **Fin**a**n**ças-> **Finn   + App**(Aplicativo- Referenciando a aplicação web).
 
 
 ## Tecnologias utilizadas.
-
+![HTML,CSSeJS](https://github.com/sthefany0011/ProjetoNeon/blob/master/assets/img/html5-css-javascript-significados-1024x576.jpg)
+![nodeJS,MySQL](https://github.com/sthefany0011/ProjetoNeon/blob/master/assets/img/nodejs-mysql.png)
 
 ## Banco de dados.
+![Diagrama](https://github.com/sthefany0011/ProjetoNeon/blob/master/assets/img/Diagrama_page-0001%20-%20Copia.jpg)
 
 tabela 1:
 **user:**

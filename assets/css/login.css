@@ -110,6 +110,11 @@ img{
     width: 40%;
     z-index: 10;
 }
+
+.first-column  img {
+    width: 65px;
+}
+
 .second-column {
     width: 60%;
     display: flex;
@@ -438,6 +443,10 @@ text-align: center;
 
     .form {
         width: 50%;
+    }
+    .first-column img {
+        width: 45px;
+        margin-top: -11px;
     }
     
     /* ANIMAÇÃO MOBILE CSS*/

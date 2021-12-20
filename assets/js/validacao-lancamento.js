@@ -19,13 +19,6 @@ document.addEventListener("DOMContentLoaded", function() {
    let bordaTitulo = document.querySelector(".titulo");
    let validaTitulo = false;
 
-   /*
-   let checkboxEntrada = document.querySelector("#gridRadios1");
-   let checkboxSaida = document.querySelector("#gridRadios2");
-   let msgCheckbox = document.querySelector("#msgCheckbox");
-   let bordaCheckbox = document.querySelector(".checkbox");
-   let validaCheckbox = false;
-*/
    let msg = document.querySelector("#msg");
    
   
@@ -79,25 +72,7 @@ document.addEventListener("DOMContentLoaded", function() {
             validaTitulo = true;
         }
     });
-/*
-    checkbox.addEventListener('keyup',() =>{
-        if(checkbox.value == '' || checkbox.value.length > 50 ){
-            msgCheckbox.innerHTML = "Preencha o campo corretamente";
-            msgCheckbox.classList.add("msg-error");
-            bordaCheckbox.classList.remove("bordaCorreto");
-            bordaCheckbox.classList.add("bordaError"); 
-            validaCheckbox = false;
-        }
-        else{  
-            msgCheckbox.innerHTML ='';
-            msgCheckbox.classList.remove("msg-error");  
-            bordaCheckbox.classList.remove("bordaError");
-            bordaCheckbox.classList.add("bordaCorreto");
-            validaCheckbox = true;
-        }
-    });
-   
-      */
+
    btn.addEventListener('click', function novoLancamento(){
       
     if(validaValor && validaData && validaTitulo){

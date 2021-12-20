@@ -66,6 +66,8 @@ Tabela 2:
 
 ## Backend.
 
+Foi feito com NodeJS junto com dependencias com express express-session e MySQL. Além disso foi feito roteamento das paginas com ejs para assim receber a requisição e enviar o renderização HTML por meio de ejs.
+
 ## FrontEnd.
 
 Inicializamos o projeto em HTML 5 .Foram criadas as páginas em HTML e CSS e JavaScript:
